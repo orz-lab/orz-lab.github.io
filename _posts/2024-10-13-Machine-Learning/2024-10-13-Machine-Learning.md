@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Machine Learning cơ bản - phần 1
+image: /images/2024-10-13-Machine-Learning
 ---
 
 # Giới thiệu về bài toán Linear Regression
 Ta có một loạt các cặp dữ liệu thể hiện mối quan hệ giữa **diện tích nhà** và **giá nhà** ở một thành phố như sau. Nếu như mình hỏi bạn nếu như có một căn nhà với diện tích nào đó mà không có trong bản dữ liệu thì bạn có thể **đoán** được giá của căn nhà đó không? Hơi khó đúng không?
 
 Nhưng nếu như ta mô tả đám dữ liệu đó dưới dạng các điểm trên một **hệ trục tọa độ** như thế này thì sao?
-![Ảnh 1](images/anh-1.png)
+![Ảnh 1]({{page.image}}/anh-1.png)
 
 Không phải ta sẽ dễ dàng có thể dự đoán được nó hay sao? Mọi thứ sẽ trở nên đơn giản hơn nếu như ta biết cách biểu diễn dữ liệu một cách trực quan hơn.
 
