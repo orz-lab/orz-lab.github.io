@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Đây là một cái Blog được tạo bởi Orzlab để chia sẽ những kiến thức về toán, lập trình, làm game và rất nhiều những thứ hay ho khác.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Repo này được folk từ Repo của [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now)
