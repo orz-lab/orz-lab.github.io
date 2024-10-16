@@ -154,5 +154,6 @@ X = np.concatenate((ones, x1_list), axis = 1)
 W = np.dot(np.linalg.pinv(np.dot(X.T, X)), np.dot(X.T, y_list))
 # Ma thuật của đại số tuyến tính
 print(W)
-
 ```
+
+Hoặc bạn có thể đọc qua [notebook này](https://github.com/orz-lab/orz-lab.github.io/blob/main/_posts/2024-10-13-Machine-Learning/Linear_Regression.ipynb) để có thể coi được thêm hình minh họa.
