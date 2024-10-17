@@ -12,7 +12,7 @@ Nhưng nếu như ta mô tả đám dữ liệu đó dưới dạng các điểm
 
 Không phải ta sẽ dễ dàng có thể dự đoán được nó hay sao? Mọi thứ sẽ trở nên đơn giản hơn nếu như ta biết cách biểu diễn dữ liệu một cách trực quan hơn.
 
-Nhưng đó là với bạn, một cỗ máy sinh học chạy bằng cơm. Còn với máy tính thì sao? Nếu bạn cho nó một bộ giữ liệu như vậy và yêu cầu nó dự đoán giá nhà với diện tích bất kì thì sao? Câu hỏi tưởng dễ nhưng giờ lại bắt đầu đau não rồi đây.
+Nhưng đó là với bạn, một cỗ máy sinh học chạy bằng cơm. Còn với máy tính thì sao? Nếu bạn cho nó một bộ dữ liệu như vậy và yêu cầu nó dự đoán giá nhà với diện tích bất kỳ thì sao? Câu hỏi tưởng dễ nhưng giờ lại bắt đầu đau não rồi đây.
 
 ## Nhận xét về bài toán
 Quay trở lại với cái đường thẳng này. Ta có các nhận xét như sau:
@@ -181,7 +181,7 @@ Ta sẽ thực hiện bức này cho đến khi nào đạo hàm xấp xỉ $0$ 
 * Ta sẽ gán $x$ với một giá trị ngẫu nhiên nào đó.
 * Lặp lại việc $x = x - \alpha \frac{\partial{f}}{\partial{x}}$ với $\alpha$ là một hằng số rất nhỏ, đến khi nào $\frac{\partial{f}}{\partial{x}}$ gần bằng không.
 
-Ta có thể hình dung bài toán giống như việc ta **thả một viên bi** từ một vị trí bất kì trên đồ thị rồi đợi cho viên bị đó **lăn xuống** dưới vực và đến được vị trí thấp nhất có thể.
+Ta có thể hình dung bài toán giống như việc ta **thả một viên bi** từ một vị trí kỳ trên đồ thị rồi đợi cho viên bị đó **lăn xuống** dưới vực và đến được vị trí thấp nhất có thể.
 
 | ![Ảnh 3](https://miro.medium.com/v2/resize:fit:720/format:webp/1*HCrKH4lCWnPUfV7ZN_vtzg.jpeg) | 
 |:--:| 
