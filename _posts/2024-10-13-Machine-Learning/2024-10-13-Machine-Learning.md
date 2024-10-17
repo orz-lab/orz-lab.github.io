@@ -156,7 +156,7 @@ W = np.dot(np.linalg.pinv(np.dot(X.T, X)), np.dot(X.T, y_list))
 print(W)
 ```
 
-Hoặc bạn có thể đọc qua [notebook này](https://github.com/orz-lab/orz-lab.github.io/blob/main/_posts/2024-10-13-Machine-Learning/Linear_Regression.ipynb) để có thể coi được thêm hình minh họa.
+Hoặc bạn có thể đọc qua [notebook này](https://github.com/orz-lab/orz-lab.github.io/blob/main/Notebooks/2024-10-13-Machine-Learning/Linear_Regression.ipynb) để có thể coi được thêm hình minh họa.
 
 ## Bằng Gradient Descent
 Đây chính là thuật toán phổ biến, được dùng để train cho nhiều mô hình AI mà mình sẽ nói đến sau này.
