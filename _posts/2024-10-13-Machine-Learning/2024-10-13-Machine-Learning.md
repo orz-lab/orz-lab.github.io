@@ -185,7 +185,7 @@ Ta có thể hình dung bài toán giống như việc ta **thả một viên bi
 
 | ![Ảnh 3](https://miro.medium.com/v2/resize:fit:720/format:webp/1*HCrKH4lCWnPUfV7ZN_vtzg.jpeg) | 
 |:--:| 
-| *ảnh được trính từ ["GRADIENT DESCENT — A Journey, not a Destination to reach Global Minima"](https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b) của DataMantra, 2024* |
+| *ảnh được trích từ ["GRADIENT DESCENT — A Journey, not a Destination to reach Global Minima"](https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b) của DataMantra, 2024* |
 
 Quay trở lại với bài toán cũ ở phần đầu, lúc này ta không chỉ có một biến $x$ mà là 2 biến $a$ và $b$. Cũng tương tự với hàm 1 biến, ta sẽ làm như sau:
 
@@ -198,7 +198,7 @@ Giải thích chi tiết thì sẽ hơi khó hiểu, nhưng cứ tưởng tượ
 
 | ![Ảnh 4](https://miro.medium.com/v2/resize:fit:640/format:webp/0*eHaQJx7HENmTZXjL.gif) | 
 |:--:| 
-| *ảnh được trính từ ["GRADIENT DESCENT — A Journey, not a Destination to reach Global Minima"](https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b) của DataMantra, 2024* |
+| *ảnh được trích từ ["GRADIENT DESCENT — A Journey, not a Destination to reach Global Minima"](https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b) của DataMantra, 2024* |
 
 # Bài toán với nhiều biến
 Giờ thay vì là bài toán đưa ra **diện tích đất** và dự đoán **giá đất**, thì giờ ta sẽ đưa ra **diện tích đất**, **tỉ lệ đất có thể xây nhà** và ta phải dự đoán được **giá đất**.
