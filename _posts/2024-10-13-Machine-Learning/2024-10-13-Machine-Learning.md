@@ -50,7 +50,7 @@ $$
     L(a, b) = \sum_{i = 1}^{n}(ax_i + b - y_i)^2 \\
 $$
 
-Nếu như ta có một hàm $f$ có thể dự đoán chính xác với $n$ điểm đã cho thì hàm $L$ của ta sẽ đạt giá trị nhỏ nhất. Vậy bài toán lúc này sẽ đưa về việc tìm cặp $(a, b)$ sao cho hàm $L$ đạt giá trị nhỏ nhất.
+Nếu như ta có một hàm $f$ có thể dự đoán chính xác với $n$ điểm đã cho thì hàm $L$ của ta sẽ đạt giá trị nhỏ nhất. Vậy bài toán lúc này sẽ đưa về việc tìm cặp $(a, b)$ sao cho hàm $L$ đạt giá trị nhỏ nhất. Việc ta đi tìm cặp $(a, b)$ sao cho hàm $L$ đạt giá trị nhỏ nhất được gọi là **train**.
 
 # Tìm giá trị nhỏ nhất của hàm $L$
 Có rất nhiều cách khác nhau để tìm ra cặp $(a,b)$, ở đây mình sẽ liệt kê một bài cách "thú vị". À, trước khi đọc tiếp thì mình sẽ thay đổi một chút về phần ký hiệu để tiện hơn cho sau này.
@@ -157,3 +157,9 @@ print(W)
 ```
 
 Hoặc bạn có thể đọc qua [notebook này](https://github.com/orz-lab/orz-lab.github.io/blob/main/_posts/2024-10-13-Machine-Learning/Linear_Regression.ipynb) để có thể coi được thêm hình minh họa.
+
+## Bằng Gradient Descent
+Đây chính là thuật toán phổ biến, được dùng để train cho nhiều mô hình AI mà mình sẽ nói đến sau này.
+
+### Ý tưởng của Gradient Descent
+
