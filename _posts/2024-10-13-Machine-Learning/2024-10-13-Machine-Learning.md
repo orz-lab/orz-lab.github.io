@@ -156,10 +156,27 @@ W = np.dot(np.linalg.pinv(np.dot(X.T, X)), np.dot(X.T, y_list))
 print(W)
 ```
 
+
 Hoặc bạn có thể đọc qua [notebook này](https://github.com/orz-lab/orz-lab.github.io/blob/main/Notebooks/2024-10-13-Machine-Learning/Linear_Regression.ipynb) để có thể coi được thêm hình minh họa.
 
 ## Bằng Gradient Descent
 Đây chính là thuật toán phổ biến, được dùng để train cho nhiều mô hình AI mà mình sẽ nói đến sau này.
 
 ### Ý tưởng của Gradient Descent
+Ý tưởng của **Gradient Descent** thường được so sánh với việc **leo núi ngược** để dễ hình dung. Tuy nhiên, thay vì leo lên đỉnh, Gradient Descent tìm cách đi xuống để đạt điểm thấp nhất của hàm đó.
 
+Khi thực hiện Gradient Descent, bạn luôn đi theo hướng dốc nhất đi xuống, nghĩa là tại mỗi điểm bạn sẽ tính toán **Gradient** (đạo hàm) để biết hướng mà hàm mất mát giảm mạnh nhất và di chuyển ngược lại với hướng của Gradient.
+
+Ở đây ta có hàm $y = x^2$ và đạo hàm của nó là $y = 2x$.
+
+![gradient_on_1d]({{page.image}}/gradient_on_1d.gif)
+
+Ta có thể thấy nếu điểm $I$ mà đang ở phía bên trái của **cực tiểu** thì đạo hàm sẽ **âm**, lúc này nếu ta đi ngược lại với đạo hàm tức là sẽ đi về phía **chiều dương**. Ngược lại nếu điểm $I$ đang ở bên phải thì đạo hàm sẽ **dương** và ta sẽ cần đi về phía **chiều âm**.
+
+Ta sẽ thực hiện bức này cho đến khi nào đạo hàm xấp xỉ $0$ tức là giá trị đã chạm hoặc gần chạm cực tiểu.
+
+### Gradient Descent
+Bài toán: Tìm $x$ sao cho tại $x$ thì $f(x)$ đạt cực tiểu.
+
+* Ta sẽ gán $x$ với một giá trị ngẫu nhiên nào đó.
+* Lặp lại việc $x = x - \alpha \frac{\partial{f(x)}}{\partial{x}}$ với $\alpha$ là một hằng số rất nhỏ, đến khi nào $\frac{\partial{f(x)}}{\partial{x}}$ gần bằng không.

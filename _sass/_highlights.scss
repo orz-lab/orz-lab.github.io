@@ -1,17 +1,35 @@
 
-.highlight {
+.highlight pre {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  // border: 1px solid #ddd;
+  // -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  // -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  // box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: scroll;
 }
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+}
+
+.copy-button {
+  // position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.copy-button:hover {
+  background: #005f99;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
