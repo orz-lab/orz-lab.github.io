@@ -244,3 +244,8 @@ w_3 = w_3 - \beta \frac{\partial{L}}{\partial{w_3}} \\
 w_n = w_n - \beta \frac{\partial{L}}{\partial{w_n}} \\
 b = b - \beta \frac{\partial{L}}{\partial{b}} \\
 $$
+
+# Tài liệu tham khảo:
+* DataMantra. (2024, June 17). GRADIENT DESCENT — A Journey, not a Destination to reach Global Minima. Medium. [https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b](https://datamantra.medium.com/gradient-descent-a-journey-not-a-destination-to-reach-global-minima-57793827a84b)
+
+* Vu, T. (2016, December 28). Bài 3: Linear Regression. Tiep Vu’s Blog. [https://machinelearningcoban.com/2016/12/28/linearregression/](https://machinelearningcoban.com/2016/12/28/linearregression/)
