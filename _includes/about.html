@@ -13,6 +13,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
+            border-radius: 50%; /* Make the avatar round */
         }
 
         .member-card h4 {
@@ -32,6 +33,10 @@
         .column.is-one-quarter {
             display: flex;
             flex-direction: column;
+        }
+
+        .email {
+            font-size: 0.8em; /* Adjust the size of the email text */
         }
 
     </style>
@@ -77,6 +82,7 @@
                                     <a title="{{ member.name }}" href="{{ member.github }}">{{ member.name }}</a>
                                 </h3>
                                 <div class="designation">{{ member.role }}</div>
+                                <div class="email">{{ member.mail }}</div>
                             </div>
                         </div>
                     </div>

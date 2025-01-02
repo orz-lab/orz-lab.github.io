@@ -1,44 +1,37 @@
 - name: Phạm Đình Trung Hiếu
   role: Leader
   github: https://github.com/hieupham1103
-  description: Third Prize at Vietnamese Olympiad in Informatics, Founder of Orzlab
+  mail: phamdinhtrunghieu1103@orzlab.net
 
 - name: Trần Hữu Vũ Phương
   role: Leader
   github: https://github.com/BongoJuniorrr
-  description: Co-founder of AIDU Project
+  mail: tranhuuvuphuong218@orzlab.net
 
 - name: Mai Đức Thuận
   role: Leader
   github: https://github.com/TheDuckIsRight
-  description: Co-founder of AIDU Project
 
 - name: Võ Minh Quân
   role: Member
   github:
-  description:
 
 - name: Phan Minh Hoài
   role: Member
   github:
-  description:
 
 - name: Nguyễn Khánh Tài
   role: Member
   github:
-  description:
 
 - name: Phạm Nguyên Khang
   role: Member
   github:
-  description:
 
 - name: Nguyễn Ngọc Tú
   role: Member
   github: https://github.com/nguyentuss
-  description:
 
 - name: Lê Nguyễn Minh Sơn
   role: Member
   github: https://github.com/LNMSon
-  description:
