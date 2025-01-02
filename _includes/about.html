@@ -1,0 +1,107 @@
+<head>
+    <style>
+        .member-card {
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #ddd; /* Add border to create a box */
+            padding: 20px; /* Add padding inside the box */
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+            height: 100%; /* Ensure all cards have the same height */
+        }
+
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .member-card h4 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .member-card p {
+            margin-bottom: 10px;
+        }
+
+        .member-card a {
+            color: #3273dc;
+            text-decoration: none;
+        }
+
+        .column.is-one-quarter {
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
+                <figure class="image">
+                    <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+                </figure>
+            </div>
+            <div
+                class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+                <p>
+                    Orzlab là một nhóm các bạn trẻ đầy nhiệt huyết, cùng chia sẻ đam mê và khám phá những lĩnh vực
+                    công nghệ hiện đại như lập trình, toán học, phát triển game, trí tuệ nhân tạo, và blockchain.
+                    Với tinh thần sáng tạo và học hỏi không ngừng, chúng tôi không chỉ thực hiện các dự án thú vị mà
+                    còn hướng đến mục tiêu truyền cảm hứng và chia sẻ kiến thức cho thế hệ trẻ. Orzlab mong muốn trở
+                    thành cầu nối để các bạn trẻ tiếp cận với các lĩnh vực công nghệ tiên tiến, từ đó phát triển kỹ
+                    năng, khám phá tiềm năng bản thân và cùng xây dựng một cộng đồng công nghệ sáng tạo, bền vững.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container has-text-centered" id="members-section">
+            <div class="section">
+                <h1 class="title is-1 is-uppercase has-text-weight-bold">
+                    Our Team Members
+                </h1>
+                <hr class="has-background-black">
+                <div class="columns is-multiline is-centered">
+                    {% for member in site.data.members %}
+                    <div class="column is-one-quarter">
+                        <div class="single-team-area">
+                            <a title="{{ member.name }}" href="{{ member.github }}">
+                                <img decoding="async" width="150" height="150" src="{% if member.github %}https://github.com/{{ member.github | split: '/' | last }}.png{% else %}https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png{% endif %}" class="img-responsive rt-team-img" alt="{{ member.name }}">
+                            </a>
+                            <div class="tlp-content">
+                                <h3 class="name">
+                                    <a title="{{ member.name }}" href="{{ member.github }}">{{ member.name }}</a>
+                                </h3>
+                                <div class="designation">{{ member.role }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container has-text-centered" id="social-links">
+        <div class="section">
+            <h2 class="title is-2 is-uppercase has-text-weight-bold">
+                Follow Us
+            </h2>
+            <hr class="has-background-black">
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    <a href="https://www.youtube.com/@{{ site.youtube_channel_id }}" target="_blank" class="button is-medium is-fullwidth">YouTube</a>
+                </div>
+                <div class="column is-one-third">
+                    <a href="https://github.com/{{ site.github_username }}" target="_blank" class="button is-medium is-fullwidth">GitHub</a>
+                </div>
+                <div class="column is-one-third">
+                    <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank" class="button is-medium is-fullwidth">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
