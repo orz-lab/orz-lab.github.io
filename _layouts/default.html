@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} – {{ site.title }}</title>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,17 @@
 <body>
   <header class="site-header">
     <div class="wrapper">
-      <a href="{{ '/' | relative_url }}" class="logo_header">
-        <!-- Đảm bảo file logo.png đã đặt đúng -->
-        <img src="{{ '/assets/images/banner.svg' | relative_url }}" alt="Orzlab logo" width="200">
-      </a>
+      <div class="header-container">
+        <a href="{{ '/' | relative_url }}" class="logo_header">
+          <img src="{{ '/assets/images/banner.svg' | relative_url }}" alt="Orzlab logo" width="200">
+        </a>
+        
+        <nav class="main-nav">
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Trang chủ</a>
+          <a href="{{ '/projects' | relative_url }}" {% if page.url contains 'projects' %}class="active"{% endif %}>Dự án</a>
+          <a href="/#contact">Liên hệ</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -32,5 +39,8 @@
   <footer class="site-footer wrapper">
     <p>&copy; {{ site.time | date: "%Y" }} Orzlab</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="{{ '/assets/js/slideshow.js' | relative_url }}"></script>
 </body>
 </html>

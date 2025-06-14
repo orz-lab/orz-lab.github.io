@@ -1,0 +1,46 @@
+---
+layout: default
+title: Dự án
+---
+
+<div class="page-header">
+  <h1>Dự án của Orzlab</h1>
+  <p class="page-description">Tổng hợp các dự án mà Orzlab đã thực hiện</p>
+</div>
+
+<div class="projects-container">
+  <div class="projects-grid">
+    {% assign all_projects = site.projects | sort: 'date' | reverse %}
+    {% for project in all_projects %}
+      <div class="project-card">
+        {% if project.featured_image %}
+        <div class="project-thumbnail">
+          <a href="{{ project.url | relative_url }}">
+            <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+          </a>
+        </div>
+        {% endif %}
+        <div class="project-content">
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          
+          {% if project.date %}
+            <div class="project-meta">
+              <span class="project-date">{{ project.date | date: "%d/%m/%Y" }}</span>
+              
+              {% if project.categories %}
+                <div class="project-categories">
+                  {% for category in project.categories %}
+                    <span class="category">{{ category }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          
+          <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+          <a href="{{ project.url | relative_url }}" class="project-link">Xem chi tiết →</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

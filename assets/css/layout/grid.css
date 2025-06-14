@@ -1,0 +1,35 @@
+/* Site content */
+.site-content {
+    padding: 2rem 0;
+}
+
+/* Grid containers */
+.projects-container {
+    margin-bottom: 3rem;
+}
+
+/* Generic grid layouts */
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-4-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Auto-fit grids */
+.auto-grid {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+}

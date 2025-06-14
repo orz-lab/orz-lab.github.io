@@ -2,7 +2,11 @@ title: Orzlab
 baseurl: "" 
 url: "https://orz-lab.github.io"
 
-collections: []
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 plugins: [jekyll-feed]
 
 youtube_channel: "https://www.youtube.com/@Orz-lab"

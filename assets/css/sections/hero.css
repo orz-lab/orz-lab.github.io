@@ -1,0 +1,50 @@
+/* Hero Section */
+.hero-background {
+    background-color: #c7c7c7;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.hero-section {
+    text-align: left;
+    padding: 0rem 2rem 0rem;
+    background-color: transparent;
+    color: #333;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+/* Hero Header with Logo and Text */
+.hero-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.hero-logo {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.hero-tagline {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}

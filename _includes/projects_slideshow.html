@@ -1,0 +1,51 @@
+<!-- Featured Projects Slideshow Section -->
+<section id="projects" class="section-spaced">
+  <div class="section-header">
+    <h2>Dự án tiêu biểu</h2>
+    <a href="{{ '/projects' | relative_url }}" class="view-all">Xem tất cả</a>
+  </div>
+
+  <div class="projects-slideshow-container">
+    <div class="slideshow-wrapper">
+      <div class="slides">
+        {% assign featured_projects = site.projects | sort: 'date' | reverse %}
+        {% for project in featured_projects limit:5 %}
+        <div class="slide fade">
+          <div class="slide-content">
+            <div class="slide-image">
+              {% if project.featured_image %}
+              <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+              {% else %}
+              <div class="slide-image-placeholder">
+                <span>{{ project.title | slice: 0 }}</span>
+              </div>
+              {% endif %}
+            </div>
+            <div class="slide-info">
+              <h3>{{ project.title }}</h3>
+              <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+              <div class="slide-actions">
+                <a href="{{ project.url | relative_url }}" class="btn btn-primary">Chi tiết</a>
+                {% if project.project_url %}
+                <a href="{{ project.project_url }}" class="btn btn-secondary" target="_blank">Xem dự án</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/circles -->
+    <div class="dots-container">
+      {% for project in featured_projects limit:5 %}
+      <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+/* Footer */
+.footer-separator {
+    border: 0;
+    border-top: 2px solid #004d40;
+    margin: 0;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
