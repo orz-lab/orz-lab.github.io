@@ -1,0 +1,18 @@
+<!-- YouTube Videos Section -->
+<section id="youtube" class="section-spaced">
+  <div class="section-header">
+    <h2>Video nổi bật</h2>
+    <a href="{{ site.youtube_channel }}" class="view-all" target="_blank">Xem tất cả</a>
+  </div>
+  
+  <div class="videos-grid">
+    {% for vid in site.data.videos %}
+      <div class="video-card">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/{{ vid.id }}" title="{{ vid.title }}" allowfullscreen></iframe>
+        </div>
+        <h3>{{ vid.title }}</h3>
+      </div>
+    {% endfor %}
+  </div>
+</section>

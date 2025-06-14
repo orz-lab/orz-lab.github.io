@@ -1,0 +1,51 @@
+- name: Phạm Đình Trung Hiếu
+  role: Leader
+  github: https://github.com/hieupham1103
+  email: phamdinhtrunghieu1103@orzlab.net
+
+- name: Trần Hữu Vũ Phương
+  role: Leader
+  github: https://github.com/BongoJuniorrr
+  email: tranhuuvuphuong218@orzlab.net
+
+- name: Mai Đức Thuận
+  role: Leader
+  github: https://github.com/TheDuckIsRight
+
+- name: Phan Minh Hoài
+  role: Member
+  email: minhhoaiphan1408@orzlab.net
+  github:
+
+- name: Lê Nguyễn Minh Sơn
+  role: Member
+  github: https://github.com/LNMSon
+
+- name: Nguyễn Khánh Tài
+  role: Member
+  github:
+- name: Lê Thành Đạt
+  role: Member
+  github: https://github.com/lds217
+
+- name: Huỳnh Trung Cường
+  role: Member
+  github:
+
+- name: Phạm Nguyên Khang
+  role: Member
+  github:
+
+- name: Ngô Duy Đoàn
+  role: Member
+  email: duydoanngo1204@orzlab.net
+  github:
+
+
+- name: Võ Minh Quân
+  role: Member
+  github:
+
+- name: Nguyễn Ngọc Tú
+  role: Member
+  github: https://github.com/nguyentuss

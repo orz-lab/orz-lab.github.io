@@ -1,0 +1,10 @@
+title: Orzlab
+baseurl: "" 
+url: "https://orz-lab.github.io"
+
+collections: []
+plugins: [jekyll-feed]
+
+youtube_channel: "https://www.youtube.com/@Orz-lab"
+github_org: "https://github.com/orz-lab"
+facebook_page: "https://www.facebook.com/orzlab.real"

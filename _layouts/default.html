@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} – {{ site.title }}</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="{{ '/' | relative_url }}" class="logo_header">
+        <!-- Đảm bảo file logo.png đã đặt đúng -->
+        <img src="{{ '/assets/images/banner.svg' | relative_url }}" alt="Orzlab logo" width="200">
+      </a>
+    </div>
+  </header>
+
+  <hr class="header-separator">
+
+  <main class="site-content wrapper">
+    {{ content }}
+  </main>
+
+  <hr class="footer-separator">
+
+  <footer class="site-footer wrapper">
+    <p>&copy; {{ site.time | date: "%Y" }} Orzlab</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- Team Members Section -->
+<section id="members" class="section-spaced">
+  <div class="section-header">
+    <h2>Đội ngũ</h2>
+  </div>
+  
+  <div class="members-grid">
+    {% for m in site.data.members %}
+      <div class="member-card">
+        <div class="member-avatar">
+          {% if m.github and m.github != "" %}
+            {% assign github_url_parts = m.github | split: "github.com/" %}
+            {% if github_url_parts.size > 1 %}
+              {% assign github_username = github_url_parts[1] | split: "/" | first %}
+              <img src="https://github.com/{{ github_username }}.png" alt="{{ m.name }}" class="github-avatar" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'avatar-placeholder\'>{{ m.name | slice: 0 }}</div>';">
+            {% else %}
+              <div class="avatar-placeholder">{{ m.name | slice: 0 }}</div>
+            {% endif %}
+          {% else %}
+            <div class="avatar-placeholder">{{ m.name | slice: 0 }}</div>
+          {% endif %}
+        </div>
+        <div class="member-info">
+          <h3>{{ m.name }}</h3>
+          {% if m.role %}<span class="member-role">{{ m.role }}</span>{% endif %}
+          {% if m.email %}<a href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}
+          {% if m.github and m.github != "" %}
+            <a href="{{ m.github }}" class="github-link" target="_blank">
+              <span>GitHub</span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
