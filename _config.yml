@@ -2,6 +2,7 @@ title: Orzlab
 baseurl: "" 
 url: "https://orz-lab.github.io"
 
+markdown: kramdown
 collections:
   projects:
     output: true
