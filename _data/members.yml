@@ -28,10 +28,6 @@
   role: Member
   github: https://github.com/lds217
 
-- name: Huỳnh Trung Cường
-  role: Member
-  github:
-
 - name: Phạm Nguyên Khang
   role: Member
   github:
@@ -39,11 +35,6 @@
 - name: Ngô Duy Đoàn
   role: Member
   email: duydoanngo1204@orzlab.net
-  github:
-
-
-- name: Võ Minh Quân
-  role: Member
   github:
 
 - name: Nguyễn Ngọc Tú
